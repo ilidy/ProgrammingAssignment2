@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix returned the list of Matrix
+## 1.ResetMatrix: redefine the new matrix if new matrix is assigned
+## 2. DisplayMatrix: show the matrix you want to calculate
+## 3. SetInverse: calculate the inverse matrix
+## 4. GetInverse: show the inverse matrix if it was calculated
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -17,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Display the Inverse Matrix of provided one
+## If Inverse Matrix was calculated prior, then get extra message "get Cached Inverse Matrix" additional
 
 cacheSolve <- function(x, ...) {
   inv <- x$GetInverse()
